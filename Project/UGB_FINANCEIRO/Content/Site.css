@@ -1,0 +1,73 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.crud .titulo {
+    font-size: 16px;
+    color: darkgray;
+    padding: 7.5px;
+    color: #8e8e8e;
+}
+
+.btn-cadastrar {
+    padding: 12px;
+}
+
+.btn-cadastrar .btn-primary {
+    text-align: center;
+    color: #8e8e8e;
+    border-color: #8e8e8e;
+    background-color: #e5e5e5;
+    height: 40px;
+}
+
+.btn-cadastrar .btn-primary:active {
+    background-color: #a0a0a0;
+}
+
+.crud .content {
+    padding: 5px;
+    border: 10px;
+    border-radius: 15px;
+    border: 1px solid darkgray;
+    padding-top: 70px;
+    position: relative;
+}
+
+.crud .display-data {
+    font-size: 22px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.crud .btn-acao {
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.crud table {
+    border: 1px solid darkgray;
+}

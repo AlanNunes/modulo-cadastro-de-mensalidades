@@ -1,0 +1,64 @@
+﻿@model UGB_FINANCEIRO.Models.Mensalidade
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Mensalidade</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Curso.NomeCurso)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Curso.NomeCurso)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ValorMensalidade)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ValorMensalidade)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataVencimento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataVencimento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.JurosAoDia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.JurosAoDia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PercentualBolsa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PercentualBolsa)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

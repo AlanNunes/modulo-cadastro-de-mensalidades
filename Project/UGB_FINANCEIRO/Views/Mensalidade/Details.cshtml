@@ -1,0 +1,58 @@
+﻿@model UGB_FINANCEIRO.Models.Mensalidade
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Mensalidade</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Curso.NomeCurso)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Curso.NomeCurso)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ValorMensalidade)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ValorMensalidade)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataVencimento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataVencimento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.JurosAoDia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.JurosAoDia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PercentualBolsa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PercentualBolsa)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.idMensalidade }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
